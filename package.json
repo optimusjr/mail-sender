@@ -1,16 +1,21 @@
 {
-  "name": "email-sender",
+  "name": "mail-sender",
   "version": "1.0.0",
   "private": true,
+  "type": "module",
   "scripts": {
-    "dev": "email dev",
-    "export": "email export"
+    "dev": "email dev --dir src/emails",
+    "start": "tsx src/main.ts"
   },
   "dependencies": {
     "@react-email/components": "^0.0.14",
     "@react-email/tailwind": "^0.0.14",
+    "@types/nodemailer": "^6.4.14",
+    "chalk": "^5.3.0",
+    "nodemailer": "^6.9.9",
     "react": "^18.2.0",
-    "react-email": "^2.0.0"
+    "react-email": "^2.0.0",
+    "tsx": "^4.7.1"
   },
   "devDependencies": {
     "@types/node": "^20.11.17",
